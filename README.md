@@ -17,9 +17,9 @@ Music Project.
 |---|---|
 | [`applications/`](applications/) | 26 application notes, each describing one MIDItool function |
 | [`pages/`](pages/) | 7 pages from the original site |
-| [`manuals/`](manuals/) | 17 PDF manuals |
+| [`manuals/`](manuals/) | 17 PDF assembly and user manuals |
 | [`firmware/`](firmware/) | 26 firmware images (Motorola S-record) and assembly source |
-| [`images/`](images/) | 68 schematics, block diagrams, LCD readouts and product photos |
+| [`images/`](images/) | 74 schematics, block diagrams, LCD readouts and product photos |
 
 ## Application notes
 
@@ -59,12 +59,36 @@ Music Project.
 - [MIDItools](pages/tools.md)
 - [User Projects](pages/userproj.md)
 
+## Missing: assembly source
+
+The hardware is built around the Motorola 68HC705C8. Compiled firmware is
+included for all 25 tools, but **assembly source survives for only one** — the
+Universal Transmitter (`00003-sw.asm`). Only that single `.asm` file was ever
+published; the rest were kept locally and the originals have since been lost.
+
+That surviving file also depends on a **shared MIDI runtime library**, referenced
+through macros such as `IGNORE_IRQ_SWI_SPI` and `MIDI_ISR_LOOPBACK`. The library
+was maintained separately and is not part of this archive either.
+
+**I am still looking for both.** If you worked with MIDItools kits, corresponded
+with Electrovoce, or have old backups from that era, I would be glad to hear from
+you — please [open an issue](../../issues). Any of the following would be
+valuable:
+
+- Assembly source (`.asm`) for any tool other than `00003`
+- The shared MIDI runtime library or its include file
+- Build scripts, makefiles, or assembler configuration from the toolchain
+- Any MIDItools documentation not already preserved here
+
+Recovering the commented source would be far more useful than disassembly, which
+can reproduce working code but not the original comments, labels or structure.
+
 ## About this archive
 
-Converted from the original HTML site. Text became Markdown; manuals, firmware
-and diagrams were kept in their original formats. Firmware files were restored to
-their proper `.s19` extensions — the live site served them renamed to `.txt` so
-that browsers would display rather than download them.
+Converted from the original HTML site. Text became Markdown; manuals, firmware,
+schematics and diagrams were kept in their original formats. Firmware files were
+restored to their proper `.s19` extensions — the live site served them renamed to
+`.txt` so that browsers would display rather than download them.
 
 Diagrams that the original site opened in JavaScript popup windows are linked
 inline here instead. Ordering and contact pages were omitted, as the products are

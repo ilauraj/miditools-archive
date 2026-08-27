@@ -19,21 +19,21 @@ Applications with Expansion Boards
 </colgroup>
 <tbody>
 <tr class="odd">
-<td width="135"><a href="i/schematics/00029-SC.gif"><img src="../images/cputn.gif" alt="cputn" /><br />
+<td width="135"><a href="../images/00029-SC.gif"><img src="../images/cputn.gif" alt="cputn" /><br />
 CPU Board Schematic (.gif)</a></td>
-<td width="135"><a href="i/manuals/00117cpu.pdf"><img src="../images/cpufassth.gif" alt="cpufassth" /><br />
+<td width="135"><a href="../manuals/00117cpu.pdf"><img src="../images/cpufassth.gif" alt="cpufassth" /><br />
 CPU Board Assembly Manual (.pdf)</a></td>
-<td width="135"><a href="i/schematics/00031-SC.gif"><img src="../images/huith.gif" alt="huith" /><br />
+<td width="135"><a href="../images/00031-SC.gif"><img src="../images/huith.gif" alt="huith" /><br />
 Human Interface Board Schematic (.gif)</a></td>
-<td width="135"><a href="i/manuals/RHUIRevB.pdf"><img src="../images/rmth.gif" alt="rmth" /><br />
+<td width="135"><a href="../manuals/RHUIRevB.pdf"><img src="../images/rmth.gif" alt="rmth" /><br />
 Rackmount Human Interface Board Assembly (.pdf)</a></td>
 </tr>
 <tr class="even">
-<td width="135"><a href="i/manuals/00120han.pdf"><img src="../images/hhassth.gif" alt="hhassth" /><br />
+<td width="135"><a href="../manuals/00120han.pdf"><img src="../images/hhassth.gif" alt="hhassth" /><br />
 Handheld Human Interface Board Assembly (.pdf)</a></td>
-<td width="135"><a href="i/manuals/00116fin.pdf"><img src="../images/finasstn.gif" alt="finasstn" /><br />
+<td width="135"><a href="../manuals/00116fin.pdf"><img src="../images/finasstn.gif" alt="finasstn" /><br />
 Final Assembly Manual (.pdf)</a></td>
-<td width="135"><a href="i/manuals/00123lcd.pdf"><img src="../images/lcdth.gif" alt="lcdth" /><br />
+<td width="135"><a href="../manuals/00123lcd.pdf"><img src="../images/lcdth.gif" alt="lcdth" /><br />
 LCD Assembly Manual (.pdf)</a></td>
 <td width="135"></td>
 </tr>
@@ -81,27 +81,27 @@ Tiny Tech [00042-sw.s19](../firmware/00042-sw.s19)
 </colgroup>
 <tbody>
 <tr class="odd">
-<td width="135"><a href="i/manuals/00128ins.pdf"><img src="../images/customth.gif" alt="customth" /><br />
+<td width="135"><a href="../manuals/00128ins.pdf"><img src="../images/customth.gif" alt="customth" /><br />
 Custom Instrument Board Assembly Manual (.pdf)</a></td>
-<td width="135"><a href="i/manuals/00161opd.pdf"><img src="../images/sixtyasth.gif" alt="sixtyasth" /><br />
+<td width="135"><a href="../manuals/00161opd.pdf"><img src="../images/sixtyasth.gif" alt="sixtyasth" /><br />
 64 or 128 Output Driver Board Assembly Manual (.pdf)</a></td>
-<td width="135"><a href="i/manuals/00259opd.pdf"><img src="../images/sixtyusth.gif" alt="sixtyusth" /><br />
+<td width="135"><a href="../manuals/00259opd.pdf"><img src="../images/sixtyusth.gif" alt="sixtyusth" /><br />
 64 or 128 Output Driver Board User Manual (.pdf)</a></td>
-<td width="135"><a href="i/manuals/01326-AS.pdf"><img src="../images/cvassth.gif" alt="cvassth" /><br />
+<td width="135"><a href="../manuals/01326-AS.pdf"><img src="../images/cvassth.gif" alt="cvassth" /><br />
 CV-MIDI Assembly Manual (.pdf)</a></td>
 </tr>
 <tr class="even">
-<td width="135"><a href="i/manuals/01323.pdf"><img src="../images/cvusth.gif" alt="cvusth" /><br />
+<td width="135"><a href="../manuals/01323.pdf"><img src="../images/cvusth.gif" alt="cvusth" /><br />
 CV-MIDI User Manual (.pdf)</a></td>
-<td width="135"><a href="i/manuals/MTM%20Manual.pdf"><img src="../images/mtmusth.gif" alt="mtmusth" /><br />
+<td width="135"><a href="../manuals/MTM%20Manual.pdf"><img src="../images/mtmusth.gif" alt="mtmusth" /><br />
 MIDItools® Messenger User Manual (.pdf)</a></td>
-<td width="135"><a href="i/manuals/00126rel.pdf"><img src="../images/relayassth.gif" alt="relayassth" /><br />
+<td width="135"><a href="../manuals/00126rel.pdf"><img src="../images/relayassth.gif" alt="relayassth" /><br />
 Relay Driver Board Assembly Manual (.pdf)</a></td>
-<td width="135"><a href="i/manuals/00127pat.pdf"><img src="../images/patchth.gif" alt="patchth" /><br />
+<td width="135"><a href="../manuals/00127pat.pdf"><img src="../images/patchth.gif" alt="patchth" /><br />
 MIDI Patch Bay Board Assembly Manual</a></td>
 </tr>
 <tr class="odd">
-<td width="135"><a href="i/manuals/TinyTech.pdf"><img src="../images/ttusth.gif" alt="ttusth" /><br />
+<td width="135"><a href="../manuals/TinyTech.pdf"><img src="../images/ttusth.gif" alt="ttusth" /><br />
 Tiny Tech User Manual (.pdf)</a></td>
 <td width="135"></td>
 <td width="135"></td>
