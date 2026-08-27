@@ -4,7 +4,7 @@ The 64 or 128 Output Driver MIDItools® one of our best sellers.This MIDItool al
 
 The 64 or 128 Output Driver requires a rack-mount chasis to accomodate one or two expansion boards. The The 64 Output Driver application requires one expansion board whereas the 128 Output Driver app requires two expansion boards.
 
-[8 Maps](../i/manuals/opsmaps.pdf) are provided to assign specific MIDI Note numbers to specific drivers. [Instruction manual](../i/manuals/00259opd.pdf) included.
+[8 Maps](../manuals/opsmaps.pdf) are provided to assign specific MIDI Note numbers to specific drivers. [Instruction manual](../manuals/00259opd.pdf) included.
 
 It's a blast!
 

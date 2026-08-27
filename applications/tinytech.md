@@ -24,6 +24,6 @@ The basic troubleshooting process is:
 
 We sell the Tiny Tech at cost to MIDItools® purchasers because we believe it is an invaluable tool. Don't build a MIDItools® without one.
 
-[Click here to view the Tiny Tech User Manual](../i/manuals/TinyTech.pdf)
+[Click here to view the Tiny Tech User Manual](../manuals/TinyTech.pdf)
 
 </div>

@@ -4,6 +4,8 @@ User Projects
 
 Jeff Berryman of ![jasonaudio](../images/jasonaudio.gif)
 
+![Berryman](../images/Berryman.jpg)
+
 The Project: The Bryan Adams FOH mix kit is based around a Midas XL4 console and a string of MIDI-controlled effects devices.  The XL4's MIDI automation system is used to control the effects devices.  One of those devices, the legendary Lexicon 960L Digital Processor, responds on all 16 MIDI channels, effectively preventing other devices on the same MIDI chain from being controlled.  To work around this problem, Jasonaudio uses a MIDItools® Channel Filter to isolate the 960L from the rest of the chain.
 
 Dan Daily

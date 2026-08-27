@@ -19,7 +19,7 @@ Music Project.
 | [`pages/`](pages/) | 7 pages from the original site |
 | [`manuals/`](manuals/) | 17 PDF manuals |
 | [`firmware/`](firmware/) | 26 firmware images (Motorola S-record) and assembly source |
-| [`images/`](images/) | 80 schematics, block diagrams, LCD readouts and product photos |
+| [`images/`](images/) | 68 schematics, block diagrams, LCD readouts and product photos |
 
 ## Application notes
 
@@ -63,11 +63,12 @@ Music Project.
 
 Converted from the original HTML site. Text became Markdown; manuals, firmware
 and diagrams were kept in their original formats. Firmware files were restored to
-their proper `.s19` and `.asm` extensions — the live site served them renamed to
-`.txt` so that browsers would display rather than download them.
+their proper `.s19` extensions — the live site served them renamed to `.txt` so
+that browsers would display rather than download them.
 
-Ordering and contact pages were omitted, as the products are no longer sold, and
-email addresses belonging to third parties were removed.
+Diagrams that the original site opened in JavaScript popup windows are linked
+inline here instead. Ordering and contact pages were omitted, as the products are
+no longer sold, and email addresses belonging to third parties were removed.
 
 ## License
 

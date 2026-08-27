@@ -2,7 +2,7 @@
 
 The CV-to-MIDI MIDItool translates four analog voltages into four selectable MIDI continuous controllers. This is done by connecting four analog control voltages (0-5v) to four ADC (Analog to Digital Converter) inputs on the MIDItools® CPU board. The digitized voltages are mapped to MIDI controller messages according to the controller parameters set (voltage source, MIDI channel, and MIDI controller number). Imagine controlling pitchbend with a photo-transistor or volume with a pressure sensor!
 
-Althoughth this MIDItool does not require an expansion board, it does require special construction techniques to connect the control voltage inputs. This project should be built in a rack-mount platform to allow the inputs to be connected via 1/4" jacks. [Assembly manual](../i/manuals/01326-AS.pdf), [connection diagram](../i/manuals/01326-CD.pdf), [sample circuits](../i/manuals/01323.pdf) and expansion kit are all included.
+Althoughth this MIDItool does not require an expansion board, it does require special construction techniques to connect the control voltage inputs. This project should be built in a rack-mount platform to allow the inputs to be connected via 1/4" jacks. [Assembly manual](../manuals/01326-AS.pdf), [connection diagram](../manuals/01326-CD.pdf), [sample circuits](../manuals/01323.pdf) and [expansion kit](../images/cvkit.gif) are all included.
 
 *Mouse over the buttons, LEDs, and potentiometer to see what they do.*
 ![hotfront2](../images/hotfront2.png) **HOW DO I...**

@@ -1,6 +1,6 @@
 # Relay Driver
 
-The Relay Driver MIDItool uses controller messages to turn relays on and off. Any controller messaage (from 1 - 120) can be assigned to all or one of four relays. A controller value greater than 64 turns the relay on, and less than 64 turns it off. This project requires the Relay Driver expansion board.
+The Relay Driver MIDItool uses controller messages to turn relays on and off. Any controller messaage (from 1 - 120) can be assigned to all or one of four relays. A controller value greater than 64 turns the relay on, and less than 64 turns it off. This project requires the [Relay Driver expansion board](../images/relaybd.gif).
 
 Use the Relay Driver to control any equipment that can be switched via a relay. Multimedia shows are particularly well suited to this project. Create a MIDI controlled house. Switch tape decks, projectors, lights...
 

@@ -1,7 +1,7 @@
 # MIDI Patch Bay
 
-![patchmtp](../images/patchmtp.jpg)
-The MIDI Patch Bay to connects four seperate MIDI INs to four MIDI OUTs, and stores 16 different programmed configurations. This MIDItool requires the Patch Bay expansion board. MIDI merging is not supported.
+![patchmt](../images/patchmt.jpg)
+The MIDI Patch Bay to connects four seperate MIDI INs to four MIDI OUTs, and stores 16 different programmed configurations. This MIDItool requires the [Patch Bay expansion board](../images/patchboard.gif). MIDI merging is not supported.
 
 Use the Patch Bay to store different preset combinations of master/slave keyboards, route devices to a system exclusive librarian, or set up assignments for controllers to control different signal or effects processors.
 
