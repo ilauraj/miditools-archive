@@ -1,0 +1,1 @@
+Must be compiled with the altered bios:  CVmain and CVLCD!!!!!

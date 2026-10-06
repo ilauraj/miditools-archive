@@ -1,2 +1,26 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# MIDItools Archive — file handling
+#
+# This is a preservation archive. The assembly source, firmware images and
+# EEPROM data date from the 1990s and carry DOS CRLF line endings. They are
+# stored byte-for-byte as they were written, so that checksums taken from this
+# repository match the files that originally shipped. Git must not rewrite them.
+
+*.asm   -text
+*.ASM   -text
+*.s19   -text
+*.S19   -text
+*.txt   -text
+
+# Raw binary. EEPROM images in particular contain 0x0D bytes but no NULs, so
+# automatic text detection misreads them and line-ending conversion corrupts
+# them silently.
+*.dat   binary
+*.pdf   binary
+*.gif   binary
+*.jpg   binary
+*.png   binary
+*.bmp   binary
+*.ico   binary
+
+# Repository documentation, written in this century.
+*.md    text eol=lf

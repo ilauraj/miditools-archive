@@ -18,7 +18,7 @@ Music Project.
 | [`applications/`](applications/) | 26 application notes, each describing one MIDItool function |
 | [`pages/`](pages/) | 7 pages from the original site |
 | [`manuals/`](manuals/) | 17 PDF assembly and user manuals |
-| [`firmware/`](firmware/) | 26 firmware images (Motorola S-record) and assembly source |
+| [`firmware/`](firmware/) | 34 firmware images, the shared BIOS library, and assembly source for 33 tools |
 | [`images/`](images/) | 74 schematics, block diagrams, LCD readouts and product photos |
 
 ## Application notes
@@ -59,29 +59,24 @@ Music Project.
 - [MIDItools](pages/tools.md)
 - [User Projects](pages/userproj.md)
 
-## Missing: assembly source
+## Firmware and source
 
-The hardware is built around the Motorola 68HC705C8. Compiled firmware is
-included for all 25 tools, but **assembly source survives for only one** — the
-Universal Transmitter (`00003-sw.asm`). Only that single `.asm` file was ever
-published; the rest were kept locally and the originals have since been lost.
+The hardware is built around the **Motorola 68HC705C8**. Every tool runs the same
+shared BIOS with a different application layered on top, assembled with the
+2500AD 6805 assembler.
 
-That surviving file also depends on a **shared MIDI runtime library**, referenced
-through macros such as `IGNORE_IRQ_SWI_SPI` and `MIDI_ISR_LOOPBACK`. The library
-was maintained separately and is not part of this archive either.
+The original development tree was recovered in October 2026 and is included here
+in full: the 33-tool application source, the complete BIOS library, and the
+build entry point that shows exactly how an image was produced. See
+[`firmware/README.md`](firmware/README.md) for the build process and a module-by-module
+guide, and for the tool-to-source index.
 
-**I am still looking for both.** If you worked with MIDItools kits, corresponded
-with Electrovoce, or have old backups from that era, I would be glad to hear from
-you — please [open an issue](../../issues). Any of the following would be
-valuable:
+Two gaps remain. No source survives for `01286-sw.s19`, which the original site
+published and nothing in the recovered tree refers to. And the 2500AD assembler
+itself is not included, so the archive has not been rebuilt from source — the
+`.s19` images here are the originals that shipped. If you have either, or any
+MIDItools material not preserved here, please [open an issue](../../issues).
 
-- Assembly source (`.asm`) for any tool other than `00003`
-- The shared MIDI runtime library or its include file
-- Build scripts, makefiles, or assembler configuration from the toolchain
-- Any MIDItools documentation not already preserved here
-
-Recovering the commented source would be far more useful than disassembly, which
-can reproduce working code but not the original comments, labels or structure.
 
 ## About this archive
 
