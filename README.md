@@ -1,7 +1,7 @@
 # MIDItools Archive
 
 A preserved archive of the documentation for **MIDItools®**, a line of MIDI
-hardware kits produced by Electrovoce, LLC between 2001 and 2007. The products
+hardware kits produced by Pavo, Inc. (Mid-1990s – c. 1998), and later Electrovoce, LLC between 2001 and 2007. The products
 are long discontinued; this repository exists so that the application notes,
 manuals, schematics and firmware remain available.
 
