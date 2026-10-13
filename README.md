@@ -55,8 +55,8 @@ Music Project.
 - [Applications](pages/apps.md)
 - [Custom MIDI Design Solutions](pages/custom.md)
 - [Downloads](pages/downloads.md)
-- [MIDItools](pages/edu.md)
-- [MIDItools](pages/tools.md)
+- [Educational Packages](pages/edu.md)
+- [MIDItools Overview](pages/tools.md)
 - [User Projects](pages/userproj.md)
 
 ## Firmware and source

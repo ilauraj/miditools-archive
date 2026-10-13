@@ -1,4 +1,4 @@
-# MIDItools
+# Educational Packages
 
 <div>
 

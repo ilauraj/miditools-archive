@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MIDItools — Electrovoce</title>
+<meta name="description" content="The MIDItools computer was a generic MIDI hardware device built around a Motorola 6805, designed by Craig Anderton, Bob Moses and Greg Bartlett. The application notes, manuals, schematics, firmware and assembly source are preserved on GitHub.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23000'/%3E%3Ctext x='8' y='12' font-family='monospace' font-size='11' fill='%23DFB259' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#000000;
+  --ink:#e7e4de;
+  --dim:#8b9299;
+  --gold:#dfb259;
+  --sky:#99ccff;
+  --rule:#242a2f;
+  --glass-a:#b4cc4e;
+  --glass-b:#97b135;
+  --char:#171f08;
+  --bezel:#0e1317;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Verdana,sans-serif;
+  font-size:17px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+.page{max-width:660px;margin:0 auto;padding:clamp(40px,9vw,88px) 20px clamp(56px,10vw,96px)}
+
+/* masthead */
+.mark{display:block;width:100%;max-width:460px;height:auto}
+.mast{margin:0 0 clamp(32px,6vw,52px)}
+
+/* the display */
+.device{
+  display:block;width:100%;padding:clamp(12px,3vw,18px);
+  background:var(--bezel);
+  border:1px solid #1b2228;border-radius:3px;
+  cursor:pointer;font:inherit;color:inherit;text-align:left;
+  transition:border-color .2s ease;
+}
+.device:hover,.device:focus-visible{border-color:#394249}
+.device:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.glass{
+  background:linear-gradient(170deg,var(--glass-a),var(--glass-b));
+  border-radius:2px;
+  padding:clamp(9px,2.4vw,15px) clamp(7px,1.8vw,12px);
+  box-shadow:inset 0 1px 7px rgba(0,0,0,.42);
+}
+.row{
+  display:flex;justify-content:center;
+  font-family:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  font-weight:500;
+  /* 16 cells of 1.05em fill the glass exactly, as on the real module */
+  font-size:min(33px,calc((100vw - 80px) / 16.8));
+  line-height:1.5;
+  color:var(--char);
+}
+.cell{
+  width:1.05em;text-align:center;white-space:pre;
+  border-right:1px solid rgba(23,31,8,.07);
+}
+.cell:last-child{border-right:0}
+.cue{margin:12px 0 0;font-size:14px;color:var(--dim)}
+
+/* text */
+h1{
+  font-size:clamp(26px,5.2vw,36px);
+  line-height:1.2;font-weight:600;letter-spacing:-.016em;
+  margin:clamp(40px,7vw,64px) 0 22px;
+  max-width:19ch;
+}
+p{margin:0 0 20px;max-width:62ch}
+.lede{color:var(--ink)}
+a{color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(223,178,89,.35)}
+a:hover{color:var(--sky);border-bottom-color:rgba(153,204,255,.5)}
+a:focus-visible{outline:2px solid var(--gold);outline-offset:2px;border-radius:1px}
+
+/* call to action */
+.go{
+  display:block;margin:clamp(30px,5vw,40px) 0;
+  padding:20px 22px;
+  border:1px solid #574a33;
+  border-radius:3px;
+  text-decoration:none;
+  transition:background-color .18s ease,border-color .18s ease;
+}
+.go:hover,.go:focus-visible{background:var(--gold);border-color:var(--gold)}
+.go .label{display:block;font-size:19px;font-weight:600;color:var(--gold);line-height:1.35}
+.go .url{
+  display:block;margin-top:5px;
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:14px;color:var(--dim);word-break:break-all;
+}
+.go:hover .label,.go:focus-visible .label,
+.go:hover .url,.go:focus-visible .url{color:#120d04}
+
+/* hardware photo */
+figure{margin:clamp(38px,7vw,58px) 0}
+figure img{display:block;width:100%;height:auto;border-radius:2px}
+figcaption{margin-top:12px;font-size:14px;color:var(--dim);max-width:58ch}
+
+h2{
+  font-size:20px;font-weight:600;letter-spacing:-.008em;
+  margin:clamp(38px,7vw,56px) 0 16px;color:var(--ink);
+}
+.closing{margin-top:clamp(30px,5vw,44px)}
+ul{margin:0 0 20px;padding:0;list-style:none;max-width:62ch}
+li{padding:9px 0;border-top:1px solid var(--rule);color:var(--dim)}
+li:first-child{border-top:0}
+li b{font-weight:500;color:var(--ink)}
+
+footer{
+  margin-top:clamp(48px,9vw,76px);padding-top:22px;
+  border-top:1px solid var(--rule);
+  font-size:13.5px;color:#596169;
+}
+footer p{margin:0 0 6px;max-width:62ch}
+
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="mast">
+    <img class="mark" src="__LOGO__" width="550" height="99"
+         alt="MIDItools by ElectroVoce — custom MIDI design solutions">
+  </header>
+
+  <button class="device" id="device" aria-label="MIDItools. Replay the power-on greeting.">
+    <div class="glass">
+      <div class="row" id="r0" aria-hidden="true"></div>
+      <div class="row" id="r1" aria-hidden="true"></div>
+    </div>
+  </button>
+  <p class="cue" aria-hidden="true">Tap to Replay</p>
+
+  <h1>Everything MIDItools is now on GitHub</h1>
+
+  <p class="lede">The MIDItools® computer was a generic hardware device designed to perform
+  MIDI operations. Designed by Craig Anderton, Bob Moses, and Greg Bartlett, it consisted of
+  a chassis, a main board called the CPU board, and a front panel board. The CPU board hosted
+  a Motorola 6805 processor, a MIDI interface, some extra memory and an analog to digital
+  converter. The front panel board contained 8 switches, 16 LED's, a potentiometer and an LCD
+  display. The CPU board also had sockets for connecting the front panel, LCD and an optional
+  expansion board via ribbon cables. Read <em>Digital Projects for Musicians</em> by Craig
+  Anderton, Bob Moses, and Greg Bartlett for a full understanding of MIDItools®, MIDI hardware
+  and software.</p>
+
+  <p>The MIDItools® product line is long discontinued and parts are no longer available. But
+  the software and documentation have been preserved: application notes, assembly manuals,
+  board schematics, firmware for all 34 tools, and the assembly source were recovered
+  in 2026.</p>
+
+  <a class="go" href="https://github.com/ilauraj/miditools-archive">
+    <span class="label">Open the MIDItools archive</span>
+    <span class="url">github.com/ilauraj/miditools-archive</span>
+  </a>
+
+  <figure>
+    <img src="__PANEL__" width="704" height="80"
+         alt="A rack-mount MIDItools unit: blue anodized front panel with a value fader,
+              a 16-character LCD, eight buttons and sixteen channel indicator LEDs.">
+    <figcaption>The rack-mount front panel. The same display shown above sat behind
+    that window.</figcaption>
+  </figure>
+
+  <h2>What the archive holds</h2>
+  <ul>
+    <li><b>26 application notes</b> — what each tool did, and how its display read</li>
+    <li><b>17 manuals</b> — assembly and operation, as originally printed</li>
+    <li><b>Board schematics</b> — CPU, human interface, relay driver and patch bay</li>
+    <li><b>Firmware for 34 tools</b> — the original images, byte for byte</li>
+    <li><b>Assembly source for 33 tools</b>, the shared BIOS, and the build that made them</li>
+  </ul>
+
+  <p class="closing">If you have any MIDItools material not preserved on GitHub, or notice
+  any errors, please
+  <a href="https://github.com/ilauraj/miditools-archive/issues">open an issue</a>.</p>
+
+  <footer>
+    <p>MIDItools® is a trademark of Electrovoce, LLC.</p>
+    <p>© 2001–2007 Electrovoce, LLC. All rights reserved.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  // Frames transcribed from GREETING.ASM, rev 1.0, 29-Aug-1993.
+  // Each entry: [top line, bottom line, hold in ms].
+  var FRAMES = [
+    [" ___            ", "|___|           ", 400],
+    [" __/            ", "|___|           ", 100],
+    [" __/l           ", "|___|>          ", 100],
+    [" __/ol          ", "|___|->         ", 100],
+    [" __/ool         ", "|___|-->        ", 100],
+    [" __/tool        ", "|___|--->       ", 100],
+    [" __/Itool       ", "|___|---->      ", 100],
+    [" __/DItool      ", "|___|----->     ", 100],
+    [" __/IDItool     ", "|___|------>    ", 100],
+    [" __/MIDItool    ", "|___|------->   ", 100],
+    [" __/ MIDItool   ", "|___|-------->  ", 100],
+    [" ___ MIDItool   ", "|___|-=-=-=-=>  ", 100],
+    [" ___ MIDItool   ", "|___|=-=-=-=->  ", 100],
+    [" ___ MIDItool   ", "|___|-=-=-=-=>  ", 100],
+    [" ___ MIDItool   ", "|___|=-=-=-=>   ", 100],
+    [" ___ MIDItool   ", "|___|-=-=-=->   ", 100],
+    [" ___ MIDItool   ", "|___|=-=-=-=->s ", 100],
+    [" ___ MIDItool   ", "|___|-=-=-=-=->s", 100],
+    [" ___ MIDItool  s", "|___|=-=-=-=-=> ", 100],
+    [" ___ MIDItool s ", "|___|-=-=-=-=>  ", 100],
+    [" ___ MIDItools  ", "|___|-=-=-=-=>  ", 0]
+  ];
+
+  var rows = [document.getElementById("r0"), document.getElementById("r1")];
+  var cells = rows.map(function (row) {
+    var made = [];
+    for (var i = 0; i < 16; i++) {
+      var c = document.createElement("span");
+      c.className = "cell";
+      c.textContent = " ";
+      row.appendChild(c);
+      made.push(c);
+    }
+    return made;
+  });
+
+  function paint(frame) {
+    for (var r = 0; r < 2; r++) {
+      for (var i = 0; i < 16; i++) {
+        var ch = frame[r].charAt(i) || " ";
+        if (cells[r][i].textContent !== ch) cells[r][i].textContent = ch;
+      }
+    }
+  }
+
+  var timer = null;
+  function play() {
+    clearTimeout(timer);
+    var i = 0;
+    (function step() {
+      paint(FRAMES[i]);
+      var hold = FRAMES[i][2];
+      if (++i < FRAMES.length) timer = setTimeout(step, hold);
+    })();
+  }
+
+  var still = window.matchMedia("(prefers-reduced-motion: reduce)");
+  if (still.matches) paint(FRAMES[FRAMES.length - 1]);
+  else play();
+
+  document.getElementById("device").addEventListener("click", function () {
+    if (still.matches) paint(FRAMES[FRAMES.length - 1]);
+    else play();
+  });
+})();
+</script>
+</body>
+</html>
