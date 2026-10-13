@@ -1,41 +1,62 @@
 # User Projects
 
-User Projects
+### Jeff Berryman, Jasonaudio
 
-Jeff Berryman of ![jasonaudio](../images/jasonaudio.gif)
+![Jasonaudio](../images/jasonaudio.gif)
 
-![Berryman](../images/Berryman.jpg)
+[![](../images/Berryman-600.jpg)](../images/Berryman.jpg)
 
-The Project: The Bryan Adams FOH mix kit is based around a Midas XL4 console and a string of MIDI-controlled effects devices.  The XL4's MIDI automation system is used to control the effects devices.  One of those devices, the legendary Lexicon 960L Digital Processor, responds on all 16 MIDI channels, effectively preventing other devices on the same MIDI chain from being controlled.  To work around this problem, Jasonaudio uses a MIDItools® Channel Filter to isolate the 960L from the rest of the chain.
+**The Project:** The Bryan Adams FOH mix kit is based around a Midas XL4 console and a string of MIDI-controlled effects devices. The XL4's MIDI automation system is used to control the effects devices. One of those devices, the legendary Lexicon 960L Digital Processor, responds on all 16 MIDI channels, effectively preventing other devices on the same MIDI chain from being controlled. To work around this problem, Jasonaudio uses a MIDItools® Channel Filter to isolate the 960L from the rest of the chain.
 
-Dan Daily
+---
 
-![MW2space4web5b](../images/MW2space4web5b.jpg)
+### Dan Daily
 
-Great New Product:
+![MidiWing 1](../images/MW2space4web5b.jpg)
 
-Einar Ask
+**Great New Product:** ![Powered by MIDItools](../images/powered-by-miditools.gif)
 
-![orbspurp](../images/orbspurp.gif)
+---
 
- 
+### Einar Ask
 
-![drmhead1](../images/drmhead1.gif)
+![](../images/orbspurp.gif)
 
-Bret Battey and James Jay
+![](../images/drmhead1.gif)
 
-![htjukelogo](../images/htjukelogo.gif)
+---
 
-Mark Nichols
+### Bret Battey and James Jay
 
-Adam Levin
+![The high-tech Juggling Jukebox by Bret Battey and James Jay](../images/htjukelogo.gif)
 
-![rack2](../images/rack2.jpg)
+---
 
-![midi031](../images/midi031.gif)
+### Mark Nichols
 
-Experienc Music Project, Seattle, Washington
+![](../images/amy-and-mark-promo.jpg)
 
-### ![sound lab pop up](../images/sound_lab_pop_up.jpg)
+---
 
-Two custom MIDItools® applications run continuously in the Sound Lab at EMP. One runs the MIDI channel routing for the Jamba Drum, shown in the foregroud of the above photo. The audio in each practic pod (9) is switched via a MIDItools® clock and master switch with a custom relay board.
+### Adam Levin
+
+![](../images/rack2.jpg)
+
+![My MIDI Setup](../images/midi031.gif)
+
+---
+
+### Malcolm Messiter
+
+![](../images/messiter-harpsichord.jpg)
+
+- [Video on YouTube](https://www.youtube.com/watch?v=koUTb5rUDaI)
+- [*Sounding Board* No. 4, British Harpsichord Society](https://www.messiter.com/BHS4.pdf) — see page 27
+
+---
+
+### Experience Music Project, Seattle, Washington
+
+![Photo courtesy of Tim Hursley](../images/sound_lab_pop_up.jpg)
+
+Two custom MIDItools® applications run continuously in the Sound Lab at EMP. One runs the MIDI channel routing for the Jamba Drum, shown in the foreground of the above photo. The audio in each practice pod (9) is switched via a MIDItools® clock and master switch with a custom relay board.
